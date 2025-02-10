@@ -1,0 +1,9 @@
+-------------------------------------------------------------------------------
+Test set: runner.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.618 s <<< FAILURE! -- in runner.TestRunner
+Title of your feature.Title of your scenario -- Time elapsed: 0.182 s <<< ERROR!
+io.cucumber.java.PendingException: TODO: implement me
+	at stepDefinitions.stepDefinitions.i_want_to_write_a_step_with_precondition(stepDefinitions.java:10)
+	at ✽.I want to write a step with precondition(file:///C:/NumpyNinza/UserAPIAutomation/UserApiRESTAssured/src/test/resources/features/CreateUser.feature:25)
+
