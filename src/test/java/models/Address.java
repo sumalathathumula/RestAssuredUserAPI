@@ -13,7 +13,7 @@ public class Address {
 	private String street;
     private String state;
     private String country;   
-	private long zipCode;
+	private String zipCode;
 
     // Getters and Setters
     
@@ -68,12 +68,12 @@ public class Address {
     }
 
     @JsonProperty("zipCode")  // Map to 'zip_code' in JSON
-    public long getZip() {
+    public String getZip() {
         return zipCode;
     }
 
     @JsonProperty("zipCode")  // Map to 'zip_code' in JSON
-    public void setZip(long zipCode) {
+    public void setZip(String zipCode) {
         this.zipCode = zipCode;
     }  
 

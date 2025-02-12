@@ -3,11 +3,11 @@ package stepDefinitions;
 import static org.junit.Assert.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+import api.UserApi;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.restassured.response.Response;
-import utils.APIUtils;
 
 public class GetAllUsersSteps {
 	
@@ -20,7 +20,7 @@ public class GetAllUsersSteps {
 
 	@When("user sends a GET request to retrieve all users")
 	public void user_sends_a_get_request_to_retrieve_all_users() {
-		 response = APIUtils.getAllUsers();
+		 response = UserApi.getAllUsers();
 	        expectedStatus = 200;
 	        System.out.println("respose code: " + response.getStatusCode());
 	    }
