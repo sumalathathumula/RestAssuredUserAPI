@@ -6,6 +6,8 @@ import io.restassured.response.Response;
 import models.User;
 import utils.ExcelReader;
 import static org.junit.Assert.*;
+import io.qameta.allure.*;
+import io.qameta.allure.restassured.AllureRestAssured;
 
 import api.UserApi;
 

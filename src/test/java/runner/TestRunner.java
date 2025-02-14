@@ -8,12 +8,13 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
     features = "src/test/resources/features",
     glue = "stepDefinitions",
-    //tags = "@Post or @Get or @GetById or @GetByFirstName or @DeleteByFirstName",
-    
-    plugin = {"pretty", "html:target/cucumber-reports.html"},
+    		plugin = {
+    		        "pretty",
+    		        "html:target/cucumber-reports.html",
+    		        "json:target/cucumber.json",
+    		        "io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm"
+    		    },
     monochrome = true
 )
-
 public class TestRunner {
-	
 }
