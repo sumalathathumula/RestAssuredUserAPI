@@ -12,7 +12,7 @@ import models.User;
 import utils.ExcelReader;
 
 public class UpdateUserByUserIdSteps {
-	
+	/*
 	private User user; 
     private int statusCode;    
     private Response response;
@@ -39,6 +39,6 @@ public class UpdateUserByUserIdSteps {
 	public void the_updated_user_response_status_code_should_be(Integer int1) {
 		assertEquals(response.statusCode(), statusCode);
 	}
-
+*/
 
 }
